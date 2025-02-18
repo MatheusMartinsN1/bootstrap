@@ -6,9 +6,107 @@
     <title>Bootstrap</title>
     <link rel="stylesheet" href="biblioteca/bootstrap.min.css">
 </head>
+
+<style>
+    h1 {
+        text-align: center;
+        margin: 20px 0px ;
+    }
+
+    .carousel {
+        text-align: center;
+    }
+
+    .carousel-caption > h2 {
+        padding: 6px;
+        width: 270px;
+        margin: 0px auto;
+        border-radius: 5px;
+        background-color: black;
+        
+    }
+
+    .carousel-item > img {
+        width: 500px;
+    }
+
+    .container {
+        margin-top: 25px;
+    }
+
+    .card {
+        margin-top: 16px;
+    }
+</style>
+
 <body>
     <h1>Pro Skaters</h1>
+    
+        <div id="skaters" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="fotos/luan.jpg" alt="Luan de Oliveira">
+                    <div class="carousel-caption">
+                        <h2 >Luan de Oliveira</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="fotos/nyjah.jpg" alt="Nyjah Huston">
+                    <div class="carousel-caption">
+                        <h2>Nyjha Huston</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="fotos/felipe.jpg" alt="Felipe Mota">
+                    <div class="carousel-caption">
+                        <h2 >Filipe Mota</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#skaters" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#skaters" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#skaters" data-bs-slide-to="2" ></button>
+            </div>
+        </div>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <header class="card-header">
+                            <h1>Luan de Oliveira</h1>
+                        </header>
+                        <div class="card-body">
+                            <h4 class="card-title">Sobre o Luan de Oliveira</h4>
+                            <p class="card-text">Luan Vilanova de Oliveira mais conhecido como Luan Oliveira é um skatista profissional brasileiro e um dos mais influentes skatistas da sua geração de skaters no Brasil. Em sua primeira participação nos Street League no skate street (já tinha participado dos X Games no skate real street), Luan conseguiu a segunda colocação.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <header class="card-header">
+                            <h1>Nyjah Huston</h1>
+                        </header>
+                        <div class="card-body">
+                            <h4 class="card-title">Sobre o Nyjah Huston</h4>
+                            <p class="card-text">Nyjah Huston é um skatista profissional estadunidense. Um dos mais vitoriosos da atualidade: É o maior campeão da Street League Skateboarding (SLS), possui sete medalhas de ouro nos X Games, um título no tradicional campeonato de Tampa e uma medalha de bronze nos Jogos Olímpicos. Conquistou sete medalhas de ouro, duas de prata e uma de bronze. O americano encontra-se invicto no SKB Street, desde 2013.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <header class="card-header">
+                            <h1>Filipe Mota</h1>
+                        </header>
+                        <div class="card-body">
+                            <h4 class="card-title">Sobre o Filipe Mota</h4>
+                            <p class="card-text">Apenas 15 anos e competindo entre os melhores skatistas do mundo. Essa é a história de Filipe Mota, o caçulinha do skate street brasileiro. Filipe é o skatista mais jovem da história a disputar uma etapa da Liga Mundial de Skate Street, a SLS. Apenas 15 anos e competindo entre os melhores skatistas do mundo. Essa é a história de Filipe Mota, o caçulinha do skate street brasileiro. Filipe é o skatista mais jovem da história a disputar uma etapa da SLS.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
 
     <script src="biblioteca/bootstrap.bundle.min.js"></script>
 </body>
